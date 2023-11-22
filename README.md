@@ -15,4 +15,9 @@ Replace:
 bucket = "primuslearning-app
 bucket = "tf-eks-jenkin-cicd-bucket"
 
-Keypair:poc-zee-key
+Keypair:eks-tf-poc-key
+pwd:83f56a7c410044ab8c5091e745e29032
+
+http://13.127.118.77:8080/
+JenkinUIpwd: jenkin
+JenkinUIuname:
