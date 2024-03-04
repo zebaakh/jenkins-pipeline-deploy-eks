@@ -14,9 +14,9 @@
 
 Replace:
 bucket = "primuslearning-app
-bucket = "tf-eks-jenkin-cicd-bucket"
+bucket = "eks-tf-jenkin-poc"
 
-Keypair:eks-tf-poc-key.pem
+Keypair:docker-poc.pem
 
 commands to run 1st:
 ###############################
@@ -36,7 +36,7 @@ terraform apply
 
 Now do ssh to jenkin server via mobax/putty or cmd and copy the password by running below command
 ###################################################################################################
-C:\Users\zeba.akhtari\Downloads>ssh -i "eks-tf-poc-key.pem" ec2-user@13.201.54.234
+C:\Users\zeba.akhtari\Downloads>ssh -i "docker-poc.pem" ec2-user@13.201.54.234
 [ec2-user@ip-10-0-10-196 ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 22ec3fcd38ef4ba19b2c973362b33cf3
 
@@ -48,8 +48,8 @@ Pwd:Jenkin@123
 
 Configure Credentials in the jnekin console:
 AWS User:
-AWS_ACCESS_KEY_ID    AKIA6ET33KEETJIZA5GH
-AWS_SECRET_ACCESS_KEY   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
+AWS_ACCESS_KEY_ID       kfgbjrkhgtrhgothnjrthj
+AWS_SECRET_ACCESS_KEY   nkhbfhdbfergbkjrngjrkn
 
 GithubUser:
 pwd: Pneumococci@123

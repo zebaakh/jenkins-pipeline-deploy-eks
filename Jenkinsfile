@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-        AWS_DEFAULT_REGION = "ap-south-1"
+        AWS_DEFAULT_REGION = "us-east-1"
     }
     stages {
         stage("Create an EKS Cluster") {
@@ -22,8 +22,8 @@ pipeline {
                 script {
                     dir('kubernetes') {
                         sh "aws eks update-kubeconfig --name myapp-eks-cluster"
-                        sh "kubectl apply -f kubernates/nginx-deployment.yaml"
-                        sh "kubectl apply -f kubernates/nginx-service.yaml"
+                        sh "kubectl apply -f ./kubernetes/nginx-deployment.yaml"
+                        sh "kubectl apply -f ./kubernetes/nginx-service.yaml"
                     }
                 }
             }
