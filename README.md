@@ -36,13 +36,13 @@ terraform apply
 
 Now do ssh to jenkin server via mobax/putty or cmd and copy the password by running below command
 ###################################################################################################
-C:\Users\zeba.akhtari\Downloads>ssh -i "docker-poc.pem" ec2-user@13.201.54.234
+C:\Users\zeba.akhtari\Downloads>ssh -i "docker-poc.pem" ec2-user@3.90.225.44
 [ec2-user@ip-10-0-10-196 ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-22ec3fcd38ef4ba19b2c973362b33cf3
+80749ab08e8d4ac09d04437343778f7c
 
 Login to Jenkin UI Now: (for 1st time login use pwd that you have cat from the jenkin server and then set new uname and pwd for jenkin UI)
 ##########################################################################################################################################
-Jenkin Url:http://13.201.54.234:8080/
+Jenkin Url:http://3.90.225.44:8080/
 Uname:zeba
 Pwd:Jenkin@123
 
